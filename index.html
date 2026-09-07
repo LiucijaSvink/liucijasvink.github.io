@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Liucija Svinkunaite – Data Scientist</title>
+  <meta name="description" content="Data scientist building recommendation systems, AI agents and predictive models. Available for freelance projects.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="palette-deep.css">
+  <link rel="stylesheet" href="cards.css">
+</head>
+<body>
+
+<nav class="nav" aria-label="Main">
+  <div class="wrap">
+    <div class="pill">
+      <ul>
+        <li><a href="#top">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#publications">Publications</a></li>
+      </ul>
+    </div>
+    <a class="cta" href="#contact">Get in touch</a>
+  </div>
+</nav>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
+    <div class="wrap">
+      <p class="status reveal"><i></i> Available</p>
+      <h1 class="reveal">Predicting before they know it.</h1>
+      <p class="lede reveal">I am a Data Scientist building systems that help people find what they’re looking for — a product they’ll love, an item they didn’t know they needed, the right information, or insights about their health.</p>
+      <div class="actions reveal">
+        <a class="btn primary" href="#projects">See my work</a>
+        <a class="btn ghost" href="#contact">Contact me</a>
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <div class="wrap">
+      <h2 class="reveal">About</h2>
+      <div class="about">
+        <div class="reveal">
+          <div class="photo-wrap"><img class="cv" src="portrait.svg" alt="" aria-hidden="true"><img class="photo" src="photo.jpg" alt="Liucija Svinkunaite" onerror="this.remove()"></div>
+        </div>
+        <div class="reveal">
+          <p>I help businesses personalise products, content, and user experiences with data science.</p>
+          <p>My work focuses on recommendation, search, and AI systems, with experience taking machine-learning projects from initial problem formulation through to deployment and evaluation.</p>
+          <p>I’ve worked across different environments and problems, from small startups to large corporations — from building an AI tool supporting individual patient diagnosis to processing large-scale user data for recommendation engines serving hundreds of thousands of people, while focusing on building practical solutions and bringing value to the business.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="wrap">
+      <h2 class="reveal">Services</h2>
+      <div class="grid four">
+        <div class="card reveal">
+          <div class="icon a">🛍️</div>
+          <h3>Recommendation systems</h3>
+          <p>Homepage recommendations, “you may also like”, personalised feeds, and targeted email campaigns — built around your data and evaluated against what you have today.</p>
+        </div>
+
+        <div class="card reveal">
+          <div class="icon b">🔎</div>
+          <h3>Search &amp; ranking</h3>
+          <p>Search and ranking systems that improve relevance and help users find products, content, or information faster. This includes retrieval, candidate generation, ranking, and relevance evaluation.</p>
+        </div>
+
+        <div class="card reveal">
+          <div class="icon c">💬</div>
+          <h3>AI assistants &amp; agents</h3>
+          <p>AI assistants and agents that answer questions using internal documents, help customers make decisions, or automate workflows. Built with LLMs, RAG, embeddings, and agentic systems.</p>
+        </div>
+
+        <div class="card reveal">
+          <div class="icon d">📈</div>
+          <h3>Predictive modelling &amp; data analysis</h3>
+          <p>Models that turn complex data into useful predictions and insights, including forecasting, time-series modelling, and applications involving healthcare and wearable data.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="wrap">
+      <h2 class="reveal">Projects</h2>
+      <p class="sub reveal">Selected work. Everything here has code you can read and, where possible, a demo you can click.</p>
+      <div class="grid two">
+
+        <article class="card project featured reveal">
+          <div class="shot"><span class="badge">Flagship</span><div class="cv-panel cv-1"></div><img src="projects/fashion.jpg" alt="Personalised fashion recommendation system" loading="lazy" onerror="this.remove()"></div>
+          <div>
+            <h3>Personalised fashion recommendations at scale</h3>
+            <p class="meta">31.8M transactions · 1.37M customers · 105K products (H&amp;M dataset)</p>
+            <p class="desc">Which twelve products should a retailer show each customer next week? Five retrieval methods shortlist about 145 candidates per customer, then a learning-to-rank model orders them using 53 customer, product and interaction features. Evaluated with rolling time-based validation and an untouched holdout week, against a bestseller baseline.</p>
+            <ul class="tags"><li>PySpark</li><li>LightGBM LambdaRank</li><li>Item-based CF</li><li>Graph embeddings</li><li>214 tests</li></ul>
+            <p class="links"><a href="https://github.com/LiucijaSvink/fashion-recommendation-system">Code and full write-up</a></p>
+          </div>
+          <div class="stats">
+            <div class="stat"><span>Customers with a hit in top 12</span><div><b>13.7%</b><small>vs 5.0%</small></div></div>
+            <div class="stat"><span>Revenue captured</span><div><b>5.9%</b><small>vs 1.8%</small></div></div>
+            <div class="stat"><span>Catalogue coverage</span><div><b>22%</b><small>vs 0.01%</small></div></div>
+          </div>
+        </article>
+
+        <article class="card project reveal">
+          <h3>Movie recommendation chatbot</h3>
+          <p class="meta">Conversational recommender with live ratings, trailers and streaming availability</p>
+          <p class="desc">Describe what you're in the mood for and it finds the film, using retrieval-augmented generation over a movie database and function calling for live data.</p>
+          <ul class="tags"><li>LangChain</li><li>OpenAI embeddings</li><li>Qdrant</li><li>Streamlit</li></ul>
+          <p class="links"><a href="https://movierecommender-3kqm9krphhega4p5qgpzrc.streamlit.app/">Try it live</a><a href="https://github.com/LiucijaSvink/movie_recommender">Code</a></p>
+        </article>
+
+        <article class="card project reveal">
+          <h3>AI travel planning agent</h3>
+          <p class="meta">Multi-agent system that turns a trip idea into stays and activities</p>
+          <p class="desc">A supervisor agent coordinates sub-agents that extract trip details from natural language, confirm preferences, then search accommodation and suggest activities matched to the traveller's interests.</p>
+          <ul class="tags"><li>LangGraph</li><li>Tool use</li><li>Streamlit</li></ul>
+          <p class="links"><a href="https://travel-ai-agent-gzv9.onrender.com">Try it live</a><a href="https://github.com/LiucijaSvink/travel_ai_agent">Code</a></p>
+        </article>
+
+      </div>
+      <p style="margin-top:1.5rem" class="reveal"><a href="https://github.com/LiucijaSvink?tab=repositories">More on GitHub →</a></p>
+    </div>
+  </section>
+
+  <section id="publications">
+    <div class="wrap">
+      <h2 class="reveal">Publications</h2>
+      <ul class="pubs reveal">
+        <li><a href="https://doi.org/10.1117/12.2587155">Mental workload classification</a></li>
+        <li><a href="https://doi.org/10.1117/12.2587188">Signal quality estimation</a></li>
+      </ul>
+    </div>
+  </section>
+
+
+  <section id="contact">
+    <div class="wrap">
+      <div class="contact-card reveal">
+        <h2>Get in touch</h2>
+        <p>Have a problem you think data, machine learning, or AI could help solve? Tell me about it.</p>
+        <div class="contact-split">
+          <div class="cs-form">
+            <h3>Send a message</h3>
+            <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="ca6b9112-99ef-4c10-a34f-91259e36a011">
+            <input type="hidden" name="subject" value="New message from your portfolio site">
+            <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+            <div class="row">
+              <label><span>Name</span><input type="text" name="name" autocomplete="name" required></label>
+              <label><span>Email</span><input type="email" name="email" autocomplete="email" required></label>
+            </div>
+            <label><span>Message</span><textarea name="message" rows="5" required></textarea></label>
+            <button class="btn primary" type="submit">Send message</button>
+          </form>
+          </div>
+          <div class="cs-direct">
+            <h3>Contacts</h3>
+            <a class="email" href="mailto:liucijasvinkunaite@gmail.com">liucijasvinkunaite@gmail.com</a>
+            <div class="actions">
+          <a class="btn ghost" href="https://www.linkedin.com/in/liucijasvinkunaite/">LinkedIn</a>
+          <a class="btn ghost" href="https://github.com/LiucijaSvink">GitHub</a>
+        </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer><div class="wrap">© 2026 Liucija Svinkunaite-Deksne</div></footer>
+
+<script>
+  // Reveal sections as they scroll into view (respects reduced-motion via CSS)
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+</body>
+</html>
