@@ -16,12 +16,15 @@
 .featured .shot{grid-column:1/-1;margin:-1.75rem -1.75rem 0;aspect-ratio:24/9;
   border-radius:calc(var(--r) - 1px) calc(var(--r) - 1px) 0 0}
 @media(max-width:799px){.featured .shot{aspect-ratio:16/10}}
+/* diagram covers: shown whole on a light plate rather than cropped to fit */
+.project .shot.diagram,.featured .shot.diagram{aspect-ratio:3/2;background:#fff}
+.project .shot.diagram a{position:absolute;inset:0;z-index:2;display:block}
+.project .shot.diagram img{object-fit:contain}
+.card.project:hover .shot.diagram img{transform:none}
 
-/* About portrait — dot-matrix artwork, replaced automatically by photo.jpg */
-:root{--photo-2:#35d6a0}
-.photo-wrap{position:relative;width:100%;aspect-ratio:1;border-radius:var(--r);overflow:hidden;background:var(--cover-bg)}
-.photo-wrap .cv,.photo-wrap .photo{position:absolute;inset:0;width:100%;height:100%;display:block}
-.photo-wrap .photo{object-fit:cover;z-index:2;border-radius:0}
+/* About portrait — gradient plate until photo.jpg is added */
+.photo-wrap{position:relative;width:100%;aspect-ratio:1;border-radius:var(--r);overflow:hidden;background:var(--grad-photo)}
+.photo-wrap .photo{position:absolute;inset:0;width:100%;height:100%;display:block;object-fit:cover;z-index:2;border-radius:0}
 
 /* services: four cards in one horizontal row */
 :root{--tint-d:#eef3ff}
@@ -80,4 +83,3 @@
 .cv-1{background:linear-gradient(135deg,#2f3a78 0%,#1f5560 58%,#161d2b 100%)}
 .cv-2{background:linear-gradient(135deg,#3a2d6b 0%,#28386a 55%,#151a27 100%)}
 .cv-3{background:linear-gradient(135deg,#1d5152 0%,#2a3a72 62%,#141a26 100%)}
-.photo-wrap .cv{object-fit:cover}

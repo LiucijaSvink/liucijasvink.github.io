@@ -48,7 +48,7 @@
       <h2 class="reveal">About</h2>
       <div class="about">
         <div class="reveal">
-          <div class="photo-wrap"><img class="cv" src="portrait.svg" alt="" aria-hidden="true"><img class="photo" src="photo.jpg" alt="Liucija Svinkunaite" onerror="this.remove()"></div>
+          <div class="photo-wrap"><img class="photo" src="photo.jpg" alt="Liucija Svinkunaite" onerror="this.remove()"></div>
         </div>
         <div class="reveal">
           <p>I help businesses personalise products, content, and user experiences with data science.</p>
@@ -97,7 +97,7 @@
       <div class="grid two">
 
         <article class="card project featured reveal">
-          <div class="shot"><span class="badge">Flagship</span><div class="cv-panel cv-1"></div><img src="projects/fashion.jpg" alt="Personalised fashion recommendation system" loading="lazy" onerror="this.remove()"></div>
+          <div class="shot diagram"><span class="badge">Flagship</span><div class="cv-panel cv-1"></div><a href="projects/recommender-architecture.jpg" aria-label="Open the full-size architecture diagram"><img src="projects/recommender-architecture.jpg" alt="Architecture of the fashion recommender: data, candidate retrieval from five sources, 53 engineered features, a LightGBM LambdaRank ranking model, and the top 12 articles per customer, with offline evaluation against a bestseller baseline." loading="lazy" onerror="this.parentElement.remove()"></a></div>
           <div>
             <h3>Personalised fashion recommendations at scale</h3>
             <p class="meta">31.8M transactions · 1.37M customers · 105K products (H&amp;M dataset)</p>
@@ -113,19 +113,19 @@
         </article>
 
         <article class="card project reveal">
-          <h3>Movie recommendation chatbot</h3>
-          <p class="meta">Conversational recommender with live ratings, trailers and streaming availability</p>
-          <p class="desc">Describe what you're in the mood for and it finds the film, using retrieval-augmented generation over a movie database and function calling for live data.</p>
-          <ul class="tags"><li>LangChain</li><li>OpenAI embeddings</li><li>Qdrant</li><li>Streamlit</li></ul>
-          <p class="links"><a href="https://movierecommender-3kqm9krphhega4p5qgpzrc.streamlit.app/">Try it live</a><a href="https://github.com/LiucijaSvink/movie_recommender">Code</a></p>
-        </article>
-
-        <article class="card project reveal">
           <h3>AI travel planning agent</h3>
           <p class="meta">Multi-agent system that turns a trip idea into stays and activities</p>
           <p class="desc">A supervisor agent coordinates sub-agents that extract trip details from natural language, confirm preferences, then search accommodation and suggest activities matched to the traveller's interests.</p>
           <ul class="tags"><li>LangGraph</li><li>Tool use</li><li>Streamlit</li></ul>
           <p class="links"><a href="https://travel-ai-agent-gzv9.onrender.com">Try it live</a><a href="https://github.com/LiucijaSvink/travel_ai_agent">Code</a></p>
+        </article>
+
+        <article class="card project reveal">
+          <h3>Movie recommendation chatbot</h3>
+          <p class="meta">Conversational recommender with live ratings, trailers and streaming availability</p>
+          <p class="desc">Describe what you're in the mood for and it finds the film, using retrieval-augmented generation over a movie database and function calling for live data.</p>
+          <ul class="tags"><li>LangChain</li><li>OpenAI embeddings</li><li>Qdrant</li><li>Streamlit</li></ul>
+          <p class="links"><a href="https://movierecommender-3kqm9krphhega4p5qgpzrc.streamlit.app/">Try it live</a><a href="https://github.com/LiucijaSvink/movie_recommender">Code</a></p>
         </article>
 
       </div>
